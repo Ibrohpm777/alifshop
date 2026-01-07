@@ -10,7 +10,7 @@ import App from './App.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <App />,
   },
 ]);
 
