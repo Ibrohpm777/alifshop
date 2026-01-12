@@ -7,6 +7,9 @@ import {
 import './index.css'
 import App from './App.jsx'
 import ProductDetail from '../components/ProductDetail.jsx';
+import Navbar from '../components/Navbar.jsx';
+import SwiperCustom from '../components/Swiper.jsx';
+import Chegirma from '../components/Chegirma.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +19,14 @@ const router = createBrowserRouter([
   {
     path: "/product/:id",
     element: <ProductDetail />,
+  },
+  {
+    path: "/products/category",
+    element: <>
+      <Navbar />
+      <SwiperCustom />
+      <Chegirma />
+    </>,
   }
 ]);
 

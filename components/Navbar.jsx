@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const categories = [
   { slug: "beauty", title: "Красота и уход" },
@@ -178,9 +178,9 @@ const Navbar = () => {
 
       <div className='flex items-center gap-5 text-nowrap'>
         {categories.slice(0, 10).map(cat => (
-          <span key={cat.slug} className="text-neutral/70 font-medium">
+          <Link to="/products/category" key={cat.slug} className="text-neutral/70 font-medium">
             {cat.title}
-          </span>
+          </Link>
         ))}
       </div>
     </div>
