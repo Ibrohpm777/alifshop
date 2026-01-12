@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { FaOdnoklassniki } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
@@ -51,7 +51,7 @@ const Footer = () => {
               <h3 className="text-gray-500 text-sm font-semibold uppercase tracking-wider">Мы в соц-медиа</h3>
               <div className="flex gap-4 text-3xl">
                 <FaInstagram className='cursor-pointer text-pink-600'/>
-                <FaFacebook className='cursor-pointer text-blue-900'/>
+                <FaFacebookF className='cursor-pointer text-blue-900'/>
                 <FaTelegram  className='cursor-pointer text-blue-400' />
                 <FaOdnoklassniki className='cursor-pointer text-orange-600' />
                 <FaTiktok className='cursor-pointer text-black'  />
