@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from '../components/Navbar'
 import SwiperCustom from '../components/Swiper'
+import Chegirma from '../components/Chegirma'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
       <Navbar />
       <SwiperCustom />
+      <Chegirma />
     </>
   )
 }
