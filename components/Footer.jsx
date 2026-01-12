@@ -1,31 +1,91 @@
-import React from 'react'
+import React from 'react';
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
+import { FaOdnoklassniki } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='bg-[#f4f6f7] pt-7 px-50 flex justify-between items-center mb-17 mt-10 border-b-1 border-b-neutral/30 pb-5'>
-        <div className='relative'>
-            <img className="absolute -top-51 left-0 z-[9999] max-w-[300px] scale-120" src="https://alifshop.uz/_ipx/f_webp,s_328x344/images/illustrations/alifshop-app-ru.png" alt="" />
-        </div>
+    <footer className="bg-gradient-to-b from-[#1a1d23] to-[#0f1115] text-gray-400 py-16">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-16">
 
+          {/* 1. Документы */}
+          <div className="space-y-5">
+            <h3 className="text-gray-500 text-sm font-semibold uppercase tracking-wider">Документы</h3>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Общие условия продажи</a></li>
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Устав</a></li>
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Свидетельство</a></li>
+            </ul>
+          </div>
 
-        <div className='flex flex-col items-start max-w-[25%] mx-auto gap-4'>
-            <h2 className='font-bold text-3xl'>Выгодные предложения всегда рядом</h2>
-            <p className='text-neutral/70 font-medium'>Заказывайте через приложение alif shop, узнайте о выгодных предложениях быстрее всех</p>
+          {/* 2. Сервис */}
+          <div className="space-y-5">
+            <h3 className="text-gray-500 text-sm font-semibold uppercase tracking-wider">Сервис</h3>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Время намаза</a></li>
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Рассрочка в Исламе</a></li>
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Продавайте на alif shop!</a></li>
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Возвраты</a></li>
+            </ul>
+          </div>
 
-            <div className='flex gap-2'>
-                <a href="https://play.google.com/store/apps/details?id=com.aliftech.alifshop" target='blank'><img src="https://alifshop.uz/_ipx/f_webp,s_141x38/images/play-market-icon.svg" alt="Google Play" /></a>
-                <a href="https://apps.apple.com/uz/app/alif-shop/id6443502616" target='blank'><img src="https://alifshop.uz/_ipx/f_webp,s_141x38/images/app-store-icon.svg" alt="App Store" /></a>
-                <a href="https://appgallery.huawei.com/app/C106710281" target='blank'><img src="https://alifshop.uz/_ipx/f_webp,s_141x38/images/app-gallery-icon.svg" alt="App Gallery" /></a>
+          {/* 3. Каталог товаров */}
+          <div className="space-y-5">
+            <h3 className="text-gray-500 text-sm font-semibold uppercase tracking-wider">Каталог товаров</h3>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Смартфоны и телефоны</a></li>
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Все наушники</a></li>
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Гаджеты</a></li>
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Аксессуары для телефонов</a></li>
+              <li><a href="#" className="text-white hover:text-[#FFBE1F] transition">Часы и аксессуары</a></li>
+            </ul>
+          </div>
+
+          {/* 4. Мы в соц-медиа + Справочная служба */}
+          <div className="space-y-8 col-span-2 lg:col-span-2">
+            {/* Соцсети */}
+            <div className="space-y-5">
+              <h3 className="text-gray-500 text-sm font-semibold uppercase tracking-wider">Мы в соц-медиа</h3>
+              <div className="flex gap-4 text-3xl">
+                <FaInstagram className='cursor-pointer text-pink-600'/>
+                <FaFacebook className='cursor-pointer text-blue-900'/>
+                <FaTelegram  className='cursor-pointer text-blue-400' />
+                <FaOdnoklassniki className='cursor-pointer text-orange-600' />
+                <FaTiktok className='cursor-pointer text-black'  />
+                
+              </div>
             </div>
+
+            {/* Справочная служба */}
+            <div className="space-y-5">
+              <h3 className="text-gray-500 text-sm font-semibold uppercase tracking-wider">Справочная служба</h3>
+              <div className="space-y-4">
+                <a href="https://t.me/alifshop_uz" className="text-white font-bold text-lg hover:text-[#FFBE1F] transition flex items-center gap-2 group">
+                  @alifshop_uz
+                </a>
+                <a href="tel:+998555121212" className="text-white font-bold text-lg hover:text-[#FFBE1F] transition flex items-center gap-2 group">
+                  <span className="text-xl">Phone</span> +998 555 12 12 12
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
+        {/* Chiziq */}
+        <div className="border-t border-gray-800 my-12"></div>
 
-        <div className='flex flex-col items-center gap-2 max-w-[8%]'>
-            <img src="https://alifshop.uz/_ipx/f_webp,s_104x104/images/alifshop-qr-code.webp" alt="" />
-            <p className='text-neutral/70 font-medium text-center'>Наведите камеру на QR-код, чтобы скачать</p>
+        {/* Copyright */}
+        <div className="text-center">
+          <p className="text-gray-500 text-lg">
+            2025 © <span className="text-white font-medium">alifshop.uz</span>
+          </p>
         </div>
-    </div>
-  )
-}
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
